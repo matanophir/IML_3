@@ -25,7 +25,7 @@ def preprocess_data(data):
     return trans_df
 
 def prepare_data(training_data, new_data):
-    trans_df = new_data
+    trans_df = new_data.copy()
 
     #normalizing data:
     # pcr_cols = set(training_data.columns[training_data.columns.str.startswith("PCR")])
